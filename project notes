@@ -1,0 +1,29 @@
+Restful API - An API seated on a Rest web service. 
+- Are designed so that the server can receive data from applications (web applications, android, ios etc)
+- Django REST Framework: is a framework built on django framework. Has authentication, good documentation, huge visibility, has authentication policies
+
+
+BUILDING BLOCKS OF DJANGO REST FRAMEWORKS
+1. Models : Tables of the database. 
+2. urls: 
+3. Serializers
+
+Serialization: changing our model data to representations such as json
+
+---set up a model called Article inside models.py
+---register the rest_framework_app inside settings.py
+--- create serializers.py file inside basic-web_api app.
+--- from rest_framework import serializers
+--- from .models import Article
+--- define a serializer class. 
+--- use modelserializer
+--- inside views.py, we create function-based api views. 
+-create urls.py file
+-register the urls inside the main urls.py file. 
+
+
+<!-- Decorators -->
+- decorators are used for function based views. 
+- they are added in views.py
+- start by importing api_view from rest_framework.decorators.
+- This is used to create django browsable APIs
