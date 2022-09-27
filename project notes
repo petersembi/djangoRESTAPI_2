@@ -8,6 +8,10 @@ BUILDING BLOCKS OF DJANGO REST FRAMEWORKS
 2. urls: 
 3. Serializers
 
+-- pipenv install django-rest-framework
+--- register your app and rest_framework app after under installed apps. 
+
+
 Serialization: changing our model data to representations such as json
 
 ---set up a model called Article inside models.py
@@ -27,3 +31,11 @@ Serialization: changing our model data to representations such as json
 - they are added in views.py
 - start by importing api_view from rest_framework.decorators.
 - This is used to create django browsable APIs
+
+
+<!-- class based views -->
+
+Allows  reusing of code for common functionality
+
+
+
